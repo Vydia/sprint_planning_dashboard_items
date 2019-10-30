@@ -1,0 +1,4 @@
+node_modules/
+credentials.json
+database.sqlite
+.DS_Store

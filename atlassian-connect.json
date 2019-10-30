@@ -1,0 +1,40 @@
+{
+  "name": "Sprint Planning Dashboard Items",
+  "description": "Custom Dashboard Items to make sprint planning easier in Jira",
+  "key": "com.vydia.sprint_planning_dashboard_items",
+  "baseUrl": "https://ec9d00b7.ngrok.io",
+  "links": {
+    "self": "https://ec9d00b7.ngrok.io/atlassian-connect.json",
+    "homepage": "https://ec9d00b7.ngrok.io/atlassian-connect.json"
+  },
+  "vendor": {
+    "name": "Vydia, Inc.",
+    "url": "http://vydia.com"
+  },
+  "authentication": {
+    "type": "none"
+  },
+  "lifecycle": {
+    "installed": "/installed"
+  },
+  "apiVersion": 1,
+  "modules": {
+    "jiraDashboardItems": [{
+      "description": {
+        "value": "Dashboard item description"
+      },
+      "url": "/sprint-capacity-bar?dashboardItemId={dashboardItem.id}&dashboardId={dashboard.id}&view={dashboardItem.viewType}",
+      "configurable": true,
+      "thumbnailUrl": "/public/sprint-capacity-bar.png",
+      "name": {
+        "value": "Sprint Capacity Bar"
+      },
+      "key": "sprint-capacity-bar",
+      "modules": {
+        "configurePage": {
+          "key": "sprint-capacity-bar-configuration"
+        }
+      }
+    }]
+  }
+}

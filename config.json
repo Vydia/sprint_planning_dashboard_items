@@ -1,0 +1,16 @@
+{
+    "development": {
+        "port": 3000
+    },
+    "production": {
+        "port": "$PORT",
+        "localBaseUrl": "https://my-subdomain.herokuapp.com"
+        "whitelist": [
+            "*.jira-dev.com",
+            "*.atlassian.net",
+            "*.atlassian.com",
+            "*.jira.com"
+        ]
+    },
+    "product": "jira"
+}

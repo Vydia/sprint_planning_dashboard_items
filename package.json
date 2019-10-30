@@ -1,0 +1,23 @@
+{
+  "name": "sprint_planning_dashboard_items",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node -r esm app.js",
+    "lint": "eslint app.js routes"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "esm": "^3.2.22",
+    "express": "^4.16.4",
+    "express-react-views": "^0.11.0",
+    "jira-connector": "^2.16.1",
+    "morgan": "^1.9.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}
