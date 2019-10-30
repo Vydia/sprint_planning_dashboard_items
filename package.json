@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node -r esm app.js",
-    "lint": "eslint app.js routes"
+    "lint": "eslint app.js routes",
+    "debug": "node -r esm --inspect app.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",

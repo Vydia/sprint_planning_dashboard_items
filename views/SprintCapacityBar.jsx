@@ -1,8 +1,8 @@
-var React = require('react');
+import React, { Component } from 'react'
 
-class SprintCapacityBar extends React.Component {
+class SprintCapacityBar extends Component {
   render() {
-    return <div>Hello {this.props.name}</div>;
+    return <div>Hello {this.props.reqs}</div>
   }
 }
 

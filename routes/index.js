@@ -4,7 +4,12 @@ export default function routes(app) {
   })
 
   app.get('/sprint-capacity-bar', (req, res) => {
-    res.render('SprintCapacityBar')
+    const view  = req.params
+    console.log(req)
+    debugger
+    res.render('SprintCapacityBar', {
+      view: view
+    })
   })
 
   app.get('/atlassian-connect.json', (req, res) => {
